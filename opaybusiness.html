@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- site desktop icon -->
+  <link rel="icon" href="./ASSETS/PERSONAL/desktop_icon.png" type="image/png">
+  <!-- css file link -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="query.css" type="text/css">
+  <!-- icon library -->
+  <link rel="stylesheet" href="/boxicons-2.1.4/css/boxicons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container business" id="top">
+    <header>
+     <div class="wrap">
+      <li class="logo2"><a href="#"><img src="./ASSETS/BUSINESS/logo-f52060c7.png" alt="logo"></a></li>
+
+      <label for="check"><i class="bx bx-menu"></i></label>
+      <input type="checkbox" id="check">
+      <nav>
+      <label for="check"><i class="bx bx-x"></i></label>
+        <ul>
+          <li><a href="opaybusiness.html">Home</a></li>
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+     </div>
+    </header>
+
+    <section class="business-row-one">
+      <div class="wrap">
+        <div class="text">
+          <h1>Reliable, Fast & Safe Payments</h1>
+          <p>Get omnichannel payment solutions to grow your business better!</p>
+          <button id="open">Contact Us</button>
+          <div class="frame-wrap">
+            <img src="./ASSETS/PERSONAL/frame.png" alt="frame">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-modal-box" id="modal">
+      <div class="modal-box">
+        <div class="header">
+          <h3>Contact Opay</h3>
+          <p id="close-modal">Cancel</p>
+        </div>
+        <div class="contacts-gateway-wrap">
+          <li><i class="bx bx-phone"></i> <a href="tel:0700 8888329">0700 8888329</a></li>
+          <li><i class="bx bx-envelope"></i> <a href="#">pos-service@opay-inc.com</a></li>
+        </div>
+      </div>
+    </div>
+    <!-- container closing tag -->
+  </div>
+  
+  <script src="./JS/script.js"></script>
+  <script>
+    // for contact modal box
+    const contactBox = document.getElementById("modal");
+    const openContact = document.getElementById("open");
+    const closeContact = document.getElementById("close-modal");
+    
+    openContact.addEventListener('click', () => {
+      contactBox.classList.toggle('appear');
+    });
+
+    closeContact.addEventListener('click', () => {
+      contactBox.classList.remove('appear');
+    });
+   </script>
+</body>
+</html>
